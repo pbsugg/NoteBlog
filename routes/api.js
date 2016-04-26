@@ -20,4 +20,24 @@ router.get('/pages', function(request, response){
 	});
 })
 
+router.post('/pages/add', function(request, response){
+	var page = new Page({
+		title: request.body.title,
+		url: request.body.url,
+		content: request.body.content,
+		menuIndex: request.body.menuIndex,
+		date: new Date(Date.now())
+	});
+
+	page.save(function(err){
+		if (response.status(404)){
+			return response.send(err)
+		}
+		else{
+			return response.send(page)
+		}
+	});
+});
+
 module.exports = router;
+
