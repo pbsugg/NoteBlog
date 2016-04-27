@@ -20,6 +20,7 @@ router.get('/pages', function(request, response){
 	});
 })
 
+//save record
 router.post('/pages/add', function(request, response){
 	var page = new Page({
 		title: request.body.title,
@@ -39,6 +40,7 @@ router.post('/pages/add', function(request, response){
 	});
 });
 
+//update record
 router.post('/pages/update', function(request, response){
 	var id = request.body._id;
 
@@ -55,6 +57,21 @@ router.post('/pages/update', function(request, response){
 	})
 	.exec();
 	response.send("Page updated!")
+});
+
+//delete record
+router.get('/pages/delete/:id', function(request, response){
+
+	var id = request.params.id;
+
+	Page.remove({
+		_id: id
+	},function(err){
+		return console.log(err)
+	});
+
+	return response.send('Page id- ' + id + ' deleted');
+
 });
 
 module.exports = router;
