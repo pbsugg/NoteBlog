@@ -39,5 +39,23 @@ router.post('/pages/add', function(request, response){
 	});
 });
 
+router.post('/pages/update', function(request, response){
+	var id = request.body._id;
+
+	Page.update({
+		_id: id
+	}, {
+		$set: {
+			title: request.body.title,
+			url: request.body.url,
+			content: request.body.content,
+			menuIndex: request.body.menuIndex,
+			date: new Date(Date.now())
+			}		
+	})
+	.exec();
+	response.send("Page updated!")
+});
+
 module.exports = router;
 
