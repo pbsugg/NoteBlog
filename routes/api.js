@@ -43,6 +43,31 @@ router.post('/add-user', function(request, response){
 	});
 });
 
+router.post('/login', function(request, response){
+	var username = request.body.username
+	var password = request.body.password
+
+	adminUser.findOne({
+		username: username
+	}, function(err, data){
+		
+		if (err | data === null) {
+			return response.send(401, "User does not exist");
+		} else {
+			var usr = data;
+			//if username and password check out
+			if (username == usr.username && bcrypt.compareSync(password, usr.password)) {
+				request.session.regenerate(function(){
+					request.session.user = username;
+					return response.send(username);
+				});
+			} else {
+				return response.send(401, "Bad username or password");
+			}
+		}
+	});
+});
+
 //save record
 router.post('/pages/add', function(request, response){
 	var page = new Page({
