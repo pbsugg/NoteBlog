@@ -42,7 +42,7 @@ router.post('/pages/add', function(request, response){
 	});
 });
 
-//display single record
+//display single record- admin
 router.get('/pages/admin-details/:id', function(request, response){
 	var id = request.params.id;
 
@@ -57,6 +57,22 @@ router.get('/pages/admin-details/:id', function(request, response){
 		}
 		});
 			
+});
+
+//display single record--client route
+
+router.get('/pages/details/:url', function(request, response){
+	var url = request.params.url
+	
+	Page.findOne({
+		url: url
+	}, function(err, page){
+		if(err){
+			return console.log(err)
+		} else {
+			return response.send(page);
+		}
+	});
 });
 
 //update record
