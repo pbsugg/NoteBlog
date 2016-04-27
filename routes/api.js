@@ -5,6 +5,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Page = require('../models/page.js')
 var adminUser = require('../models/admin-users.js');
+var bcrypt = require('bcrypt-nodejs')
 
 //User routes
 
@@ -20,7 +21,27 @@ router.get('/pages', function(request, response){
 	});
 })
 
+//add new (admin blog) user
 
+router.post('/add-user', function(request, response){
+	var salt, hash, password;
+	password = request.body.password;
+	salt = bcrypt.genSaltSync(10);
+	hash = bcrypt.hashSync(password, salt);
+
+	var AdminUser = new adminUser ({
+		username: request.body.username,
+		password: hash
+	});
+
+	AdminUser.save(function(err){
+		if (!err){
+			return response.send( 'successfully created');
+		} else{
+			return response.send(err);
+		}
+	});
+});
 
 //save record
 router.post('/pages/add', function(request, response){
