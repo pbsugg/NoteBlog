@@ -20,6 +20,8 @@ router.get('/pages', function(request, response){
 	});
 })
 
+
+
 //save record
 router.post('/pages/add', function(request, response){
 	var page = new Page({
@@ -38,6 +40,23 @@ router.post('/pages/add', function(request, response){
 			return response.send(page)
 		}
 	});
+});
+
+//display single record
+router.get('/pages/admin-details/:id', function(request, response){
+	var id = request.params.id;
+
+	Page.findOne({
+		_id: id
+	},
+	function(err, page){
+		if (err){
+			return console.log(err);
+		} else{
+		return response.send(page);
+		}
+		});
+			
 });
 
 //update record
