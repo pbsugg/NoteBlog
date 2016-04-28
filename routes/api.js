@@ -21,6 +21,12 @@ router.get('/pages', function(request, response){
 	});
 })
 
+function sessionCheck(request, response, next){
+	if(request.session.user) next();
+		else response.status(401).send('authorization failed')		
+	
+}
+
 //add new (admin blog) user
 
 router.post('/add-user', function(request, response){
@@ -77,7 +83,7 @@ router.get('/logout', function(request, response){
 });
 
 //save record
-router.post('/pages/add', function(request, response){
+router.post('/pages/add', sessionCheck, function(request, response){
 	var page = new Page({
 		title: request.body.title,
 		url: request.body.url,
@@ -97,7 +103,7 @@ router.post('/pages/add', function(request, response){
 });
 
 //display single record- admin
-router.get('/pages/admin-details/:id', function(request, response){
+router.get('/pages/admin-details/:id', sessionCheck, function(request, response){
 	var id = request.params.id;
 
 	Page.findOne({
@@ -130,7 +136,7 @@ router.get('/pages/details/:url', function(request, response){
 });
 
 //update record
-router.post('/pages/update', function(request, response){
+router.post('/pages/update', sessionCheck, function(request, response){
 	var id = request.body._id;
 
 	Page.update({
@@ -149,7 +155,7 @@ router.post('/pages/update', function(request, response){
 });
 
 //delete record
-router.get('/pages/delete/:id', function(request, response){
+router.get('/pages/delete/:id', sessionCheck, function(request, response){
 
 	var id = request.params.id;
 
