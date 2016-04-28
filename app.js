@@ -11,11 +11,12 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
 
-
+//db
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/blogwiki');
-var db = mongoose.connection;
+require('./models/db');
+var dbURI = 'mongodb://localhost/Loc8r'
+mongoose.connect(dbURI);
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
