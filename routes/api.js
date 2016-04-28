@@ -68,6 +68,14 @@ router.post('/login', function(request, response){
 	});
 });
 
+//logout
+router.get('/logout', function(request, response){
+	request.session.destroy(function(){
+		return response.send(401, 'User logged out');
+
+	});
+});
+
 //save record
 router.post('/pages/add', function(request, response){
 	var page = new Page({
@@ -79,11 +87,11 @@ router.post('/pages/add', function(request, response){
 	});
 
 	page.save(function(err){
-		if (response.status(404)){
-			return response.send(err)
+		if (response.status(200)){
+			return response.status(200).send(page)
 		}
 		else{
-			return response.send(page)
+			return response.send(400, err)
 		}
 	});
 });
