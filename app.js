@@ -15,7 +15,7 @@ var api = require('./routes/api');
 var app = express();
 var mongoose = require('mongoose');
 require('./models/db');
-var dbURI = 'mongodb://localhost/Loc8r'
+var dbURI = 'mongodb://localhost/database'
 mongoose.connect(dbURI);
 
 // view engine setup
@@ -38,11 +38,9 @@ app.use(session({
 //routes
 
 //the 'api' route should go first for higher priority
-var api = require('./routes/api');
 app.use('/api', api);
-
 app.use('/', routes);
-//app.use('/users', users);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
