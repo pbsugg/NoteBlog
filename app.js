@@ -11,11 +11,13 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
 
-
+//db
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/blogwiki');
-var db = mongoose.connection;
+require('./models/db');
+var dbURI = 'mongodb://localhost/database'
+mongoose.connect(dbURI);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -36,11 +38,9 @@ app.use(session({
 //routes
 
 //the 'api' route should go first for higher priority
-var api = require('./routes/api');
 app.use('/api', api);
-
 app.use('/', routes);
-//app.use('/users', users);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
