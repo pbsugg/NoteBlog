@@ -4,14 +4,14 @@ A MEAN stack blog for personal use that combines the features of a (personal) no
 
 # Why Build Your Own Blog?
 
-*Develop thoughts in a public-facing format that are a bit longer and more substantive than a tweet.
-*To enforce this format, they will be length-limited, something on the order of a not-too-long paragraph. Let's say 100 words for now.
-*Declutter the blogging sidebar.  Many blogs have a "two column" format of some
+* Develop thoughts in a public-facing format that are a bit longer and more substantive than a tweet.
+* To enforce this format, they will be length-limited, something on the order of a not-too-long paragraph. Let's say 100 words for now.
+* Declutter the blogging sidebar.  Many blogs have a "two column" format of some
 kind, with the primary column being the content and the second, smaller column 
 including links, social media accounts, related posts and other secondary
 content.  The secondary column largely becomes a catch-all and stops being read. This format will make that secondary column into a more deliberate,
 cleaned-up space. Rather than ignoring the second column, the reader can expect to find real content there and start paying more attention.
-*Get a "two for one" with a blogging platform.  The big problem with blogs is that, as informal and spontaneous as they are, they still present a fairly high
+* Get a "two for one" with a blogging platform.  The big problem with blogs is that, as informal and spontaneous as they are, they still present a fairly high
 barrier to entry for a busy person.  You have to have something to say that is
 fairly unified and well-structured if it's going to be worth reading. We know
 from Twitter that it's a lot easier to say something quickly if it comes in a small, manageable chunk.  This blog is an attempt to bring the same spontaneity to the
