@@ -1,9 +1,13 @@
-# NoteBlog
+## NoteBlog
 
-A MEAN stack blog for personal use that combines the features of a (personal) note-taking wiki and a blog.
+#Overview
 
-# Why Build Your Own Blog?
+A MEAN stack blog for personal use that combines the features of a (personal) note-taking tool and a blog.
 
+# Why A Blog From Scratch?
+
+//how different from microblogging?
+	
 * Develop thoughts in a public-facing format that are a bit longer and more substantive than a tweet.
 * To enforce this format, they will be length-limited, something on the order of a not-too-long paragraph. Let's say 100 words for now.
 * Declutter the blogging sidebar.  Many blogs have a "two column" format of some
@@ -20,7 +24,14 @@ days you have a blog post worth reading.
 notes to my blog, I make it possible 
 
 # Functionality 
+Will take the 10-15 most recently updated tags, list all notes that fall under
+those tags (each note appears only once)
 
+// Image of Blog front page
+
+#Other Project Links
+//User Stories
+//Wireframes
 As a user, I would like to... ;)
 
 1. Show and provide a record of what I am reading/thinking without commiting to
