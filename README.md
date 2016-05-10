@@ -5,7 +5,7 @@ A MEAN stack blog for personal use that combines the features of a (personal) no
 # Why Build Your Own Blog?
 
 * Develop thoughts in a public-facing format that are a bit longer and more substantive than a tweet.
-* To enforce this format, they will be length-limited, something on the order of a not-too-long paragraph. Let's say 100 words for now.
+* To enforce this format, they will be moderately length-limited, something on the order of a not-too-long paragraph. Let's say 250 words for now.
 * Declutter the blogging sidebar.  Many blogs have a "two column" format of some
 kind, with the primary column being the content and the second, smaller column 
 including links, social media accounts, related posts and other secondary
