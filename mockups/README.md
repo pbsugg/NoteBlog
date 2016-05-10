@@ -8,3 +8,5 @@
 * Recent notes list view, with flexible listing:
 	+ Default date
 	+ Tag
+
+![imgtest](../img/DisplayPost.png)
