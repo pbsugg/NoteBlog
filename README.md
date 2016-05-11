@@ -7,6 +7,8 @@ of a note-taking tool and a blog. The goal is to combine the low-pressure
 spontaneity of note-taking with the longer, more developed presentation of a
 blog.  For now, I call it a NoteBlog ;)
 
+[Blog Front Page[(./mockups/BlogLandingPage.png)
+
 #Why Build A Blog From Scratch?
 
 Blogging is a well-developed art, with many ready-made options for a variety of
@@ -60,7 +62,7 @@ cleaned-up space. Rather than ignoring the second column, the reader can expect 
 deliberately working and thinking about when you don't have a publishable blog
 post yet ready.
 
-(Blog Front Page)[./mockups/BlogLandingPage.png]
+
 #Technical Description
 
 TBD
