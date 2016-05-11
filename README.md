@@ -7,7 +7,7 @@ of a note-taking tool and a blog. The goal is to combine the low-pressure
 spontaneity of note-taking with the longer, more developed presentation of a
 blog.  For now, I call it a NoteBlog ;)
 
-[Blog Front Page](./mockups/BlogLandingPage.png)
+![Blog Front Page](./mockups/BlogLandingPage.png)
 
 #Why Build A Blog From Scratch?
 
