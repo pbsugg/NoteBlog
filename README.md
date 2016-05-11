@@ -60,13 +60,12 @@ cleaned-up space. Rather than ignoring the second column, the reader can expect 
 deliberately working and thinking about when you don't have a publishable blog
 post yet ready.
 
-// Image of Blog front page
-
+(Blog Front Page)[./mockups/BlogLandingPage.png]
 #Technical Description
 
 TBD
 
 # Other Project Links
 * I wrote a few [user stories](./UserStories.md) to better understand what I want out of this project.
-* Here are a few wireframes and visual mockups I'll be working from, to be
-  updated as my desig from, to be updated as my design does.
+* Here are a few [wireframes and visual mockups](./Wireframes.md) I'll be working from, to be
+  updated as  be updated as my design evolves.
