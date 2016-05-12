@@ -1,6 +1,6 @@
-## NoteBlog
+#NoteBlog
 
-#Overview
+##Overview
 
 A personal blogging platform built on the MEAN stack that combines the features
 of a note-taking tool and a blog. The goal is to combine the low-pressure
@@ -9,7 +9,7 @@ blog.  For now, I call it a NoteBlog ;)
 
 ![Blog Front Page](./mockups/ShowPostNoteFocus.png)
 
-#Why Build A Blog From Scratch?
+##Why Build A Blog From Scratch?
 
 Blogging is a well-developed art, with many ready-made options for a variety of
 needs and technological skill sets, but none of the existing options were
@@ -26,7 +26,7 @@ but that also had more back-end ability to dynamically aggregate and organize a 
 than static sites can easily manage.  I needed something that was both more and
 less than the typical blogging solution.
 
-# What Sets This Platform Apart?
+## What Sets This Platform Apart?
 
 Tumblr and Twitter are great for posting quick little snippets of media and text, but
 they're still very far removed from the blogging mindset.  Blogs are supposed to
@@ -46,7 +46,7 @@ So the big difference from every other blog here is the way it lowers the
 barrier to entry into blogging.  Take notes when you have something you want to
 get out there--they might not lead anywhere (that's fine too, you still have them down), or they might go somewhere.
 
-###What Note-Taking Adds to Blogging
+##What Note-Taking Adds to Blogging
 
 * Notes offer a public-facing format for my thoughts that are a bit longer and more substantive than a tweet, but way less committing than a full blog post.  Whereas I might only get around to blogging once a week or every few weeks, I'm writing notes several times a week at least, and the expectations are low! And I have more of a presence on my blog because I'm more active.
 * Notes  will be moderately length-limited, something on the order of 250 words.  That's long enough to enforce some discipline, but still enough to contain some substance.
@@ -63,11 +63,11 @@ deliberately working and thinking about when you don't have a publishable blog
 post yet ready.
 
 
-#Technical Description
+##Technical Description
 
-TBD
+TD
 
-# Other Project Links
+## Other Project Links
 * I wrote a few [user stories](./UserStories.md) to better understand what I want out of this project.
-* Here are a few [wireframes and visual mockups](./Wireframes.md) I'll be working from, to be
-  updated as  be updated as my design evolves.
+* Here are a few [wireframes and visual mockups](./Wireframes.md) I'll be
+  working from, to be updated as my design evolves.
