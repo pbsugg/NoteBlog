@@ -7,9 +7,9 @@ var bodyParser = require('body-parser');
 var session = require('express-session')
 
 //require the route pages
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var api = require('./routes/api');
+var routes = require('./app_server/routes/index');
+var users = require('./app_server/routes/users');
+var api = require('./app_server/routes/api');
 
 //db
 var app = express();
