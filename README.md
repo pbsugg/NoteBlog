@@ -68,6 +68,6 @@ post yet ready.
 TD
 
 ## Other Project Links
-* I wrote a few [user stories](./UserStories.md) to better understand what I want out of this project.
-* Here are a few [wireframes and visual mockups](./Wireframes.md) I'll be
+* I wrote a few [user stories](./docs/UserStories.md) to better understand what I want out of this project.
+* Here are a few [wireframes and visual mockups](./docs/Wireframes.md) I'll be
   working from, to be updated as my design evolves.
