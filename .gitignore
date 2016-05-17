@@ -1,3 +1,4 @@
 *.swp
 /local_files
 /node_modules
+/app_client/node_modules
