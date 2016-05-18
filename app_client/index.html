@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NoteBlog</title>
+  <style>body{padding-top:70px}</style>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+  <!--Put ES6 features in global context-->
+  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+  <!--Replaces angular2-polyfills -->
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+ 
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  
+  <script src="sytemjs.config.js"></script>
+  <script>
+	System.import('app').catch(function(err) { console.error(err); });
+  </script>
+</head>
+
+<body>
+  <noteblog-application></noteblog-application>
+</body>
+</html>
