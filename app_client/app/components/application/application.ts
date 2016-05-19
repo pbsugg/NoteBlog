@@ -7,6 +7,25 @@ import NoteComponent  from "app/components/note/note";
 import PostComponent from "app/components/post/post";
 
 
+
+@Component({
+	selector: 'noteblog-application',
+	providers: [
+		Note,
+		Post
+	],
+	templateURL: 'app/components/application/application.html',
+	styleURLs: ['app/components/application/application.css'],
+	directives: [
+		HeaderComponent,
+		NavbarComponent,
+		LandingPageComponent,
+		ActivityBarComponent,
+		NoteComponent,
+		PostComponent
+	]
+})
+
 export default class ApplicationComponent{
 	
 	notes: Array<Note> = [];
@@ -18,5 +37,3 @@ export default class ApplicationComponent{
 		this.posts = this.posts.getMostRecentPosts(5);
 	}
 }
-
-
