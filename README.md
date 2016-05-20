@@ -71,3 +71,5 @@ TD
 * I wrote a few [user stories](./docs/UserStories.md) to better understand what I want out of this project.
 * Here are a few [wireframes and visual mockups](./docs/Wireframes.md) I'll be
   working from, to be updated as my design evolves.
+* Visualization of Angular2 [component and service
+  relationships](./docs/ComponentsServices.md) for this app.
