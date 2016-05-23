@@ -1,4 +1,4 @@
-##Components
+##Components and Services
 
 I drew up the following chart to help me think through how I would group my
 Angular components and services to support the views that I mocked up on the
