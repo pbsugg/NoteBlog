@@ -1,8 +1,7 @@
 import {Component} from "@angular/core";
-import NavbarComponent from "app/components/navbar/navbar"; 
+import TopNavbarComponent from "app/components/top-navbar/top-navbar"; 
 import FooterComponent from "app/components/footer/footer";
-import LandingPageComponent  from "app/components/landing-page/landing-page";
-import SidebarComponent from "app/components/sidebar/sidebar";
+import LinkSidebarComponent from "app/components/link-sidebar/link-sidebar";
 
 @Component({
 	selector: 'noteblog-application',
